@@ -11,6 +11,20 @@ public class ASTVisitorTester {
 		
 		ASTVisitorTester temp = new ASTVisitorTester();
 		
+		String helloWorld = "public class HelloWorld {
+			public static void testClass(){
+				public void testMethod(){
+				}
+			}
+
+    			public static void main(String[] args) {
+        		// Prints "Hello, World" to the terminal window.
+        		System.out.println("Hello, World");
+			testClass t = new testClass();
+			
+    			}
+		}"
+		
 		
 		String testClass = "public class DoesItWork{\n"
 				+ "private class MaybeWorks{} \n"
