@@ -9,22 +9,21 @@ public class ASTVisitorTester {
 	
 	public static void main(String[] args) {
 		
+		
 		ASTVisitorTester temp = new ASTVisitorTester();
 		
-		String helloWorld = "public class HelloWorld {
-			public static void testClass(){
-				public void testMethod(){
-				}
-			}
-
-    			public static void main(String[] args) {
-        		// Prints "Hello, World" to the terminal window.
-        		System.out.println("Hello, World");
-			testClass t = new testClass();
-			
-    			}
-		}"
-		
+		String helloWorld = "public class HelloWorld {"+
+			"public class testClass{"+
+				"public void testMethod(){"+
+				"}"+
+			"}"+
+    			"public static void main(String[] args) {" +
+        		"// Prints \"Hello, World\" to the terminal window."+
+        		"System.out.println(\"Hello, World\");" +
+			"testClass t = new testClass();"
+			+ "t.testMethod();" +
+    			"}" +
+		"}";
 		
 		String testClass = "public class DoesItWork{\n"
 				+ "private class MaybeWorks{} \n"
@@ -58,31 +57,8 @@ public class ASTVisitorTester {
 		//System.out.println(result);
 		
 		
-		CompilationUnit cu = temp.createCompilationUnit(testClass);
+		CompilationUnit cu = temp.createCompilationUnit(helloWorld);
 		
-		
-		 class SpecificVisitor extends ASTVisitor{
-			
-			 public boolean visit(PrimitiveType node) {
-					
-					System.out.println(node.getNodeType());
-					
-					return true;
-				}
-			 
-		}
-		 
-		
-//		ASTVisitor visitor = new ASTVisitor() {
-//			public boolean visit(ASTNode node) {
-//				
-//				System.out.println(node.getNodeType());
-//				
-//				return true;
-//			}
-//			};
-//			
-		//ASTVisitor visitor = new SpecificVisitor();
 		
 		HashMap<String,Integer> log = new HashMap<>();
 		 
