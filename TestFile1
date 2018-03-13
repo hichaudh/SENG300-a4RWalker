@@ -1,0 +1,49 @@
+/*
+
+Test classes for group assignment 1.
+
+*/
+	
+// Make a foo a class  in one file and bar a class in another file. Have foo reference bar. Need to set bindings and the environment properly.
+
+import HashMap;
+
+// If I say package foo, then the fully qualified name of myClass is foo.myClass
+
+
+public class myClass {
+
+	private int a;
+
+	private int b;
+
+	private String c = “Hello”;
+
+
+	public myClass(){
+
+		a = 10;
+		b = 5;
+	
+	}
+
+	public void sayHi(){
+
+		System.out.println(“Hi”); // Should catch System
+	
+	}
+
+
+	public HashMap<String,Integer> mapIt(String d, int e){
+
+		HashMap<String, Integer> map = new HashMap<>();
+		map.push(d, e);
+
+		return map;
+	
+	}
+
+	
+
+
+}

@@ -1,0 +1,35 @@
+/*
+Test File 6
+*/
+
+
+public class A {
+
+        String a;
+        int    b;
+
+        private class B{
+
+                Time t = new Time();
+
+                private class C {
+                
+                                
+        
+                }
+
+        }
+
+
+        private class D{
+
+                public void(){
+
+                 // Empty stub                
+
+                }        
+
+
+        }
+
+}

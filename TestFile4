@@ -1,0 +1,37 @@
+/*
+Test file 4
+*/
+
+import newPackage;
+
+import java.util.HashMap;
+
+
+public class SomeClass implements SomeInterface{
+
+
+        private int a = 10;
+        private String b = "hi"'
+
+        public void myMethod(int a, String b){
+
+
+        this.a = a;
+        this.b = b;        
+
+        }
+        
+        public HashMap<String,Integer> doSomething(){
+        
+        HashMap<String, Integer> myMap = new HashMap<String, Integer>();
+        
+        myMap.put(b, a);
+        
+        return myMap;
+        
+
+        }
+
+
+
+}

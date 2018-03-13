@@ -1,0 +1,25 @@
+/*
+
+Test File 7
+*/
+
+package myPackage;
+
+
+import java.util.String
+
+
+public class A extends B{
+
+
+        @Override
+        public String someMethod(){
+
+              return "Hi";  
+        
+        }
+
+
+
+
+}

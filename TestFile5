@@ -1,0 +1,39 @@
+/*
+Test file 5
+*/
+
+import newPackage;
+
+java.util.*
+
+
+public class newClass extends someClass {
+
+
+	private secretClass {
+
+		String secret = "shh";
+
+		private String secretMethod(int a, boolean b){
+		
+			String c = a + " " + b;
+
+			return c;
+			
+		}
+
+
+        private int a = 11;
+        private String b = "hi"'
+
+        public void myMethod(int a, String b){
+
+
+        this.a = a;
+        this.b = b;        
+
+        }
+        
+    
+
+}

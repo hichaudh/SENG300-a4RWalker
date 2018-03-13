@@ -1,0 +1,23 @@
+/*
+
+Test File 8
+
+*/
+
+
+
+public class X{
+
+
+        HelloWorld a = new HelloWorld(){
+        
+                String name = "hi";
+                int c = 5;
+        
+        }
+
+        
+
+
+
+}
